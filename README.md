@@ -19,7 +19,7 @@ I used sample database from PostgreSQL Tutorial and created Dockerfile to run po
 - [PostgreSQL Tutorial](http://www.postgresqltutorial.com/postgresql-sample-database/)
 
 ## PostgreSQL Tutorial ER Diagram
-![PostgreSQL Tutorial DVD Rental ER Diagram](er_diagram.png)
+![PostgreSQL Tutorial DVD Rental ER Diagram](docs-assets/er_diagram.png)
 
 
 
