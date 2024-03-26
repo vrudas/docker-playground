@@ -1,0 +1,8 @@
+${AnsiColor.BLUE}  ____             _                  _
+${AnsiColor.BLUE} |  _ \  ___   ___| | _____ _ __     / \   _ __  _ __
+${AnsiColor.BLUE} | | | |/ _ \ / __| |/ / _ \ '__|   / _ \ | '_ \| '_ \
+${AnsiColor.YELLOW} | |_| | (_) | (__|   <  __/ |     / ___ \| |_) | |_) |
+${AnsiColor.YELLOW} |____/ \___/ \___|_|\_\___|_|    /_/   \_\ .__/| .__/
+${AnsiColor.YELLOW}                                          |_|   |_|
+${AnsiColor.GREEN} :: Spring Boot ::${spring-boot.formatted-version}${AnsiColor.DEFAULT}
+${AnsiColor.DEFAULT}
