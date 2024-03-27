@@ -18,7 +18,7 @@ class TestApplication {
 }
 
 fun main(args: Array<String>) {
-    fromApplication<DockerPlaygroundApplication>()
+    fromApplication<DockerApplication>()
         .with(TestApplication::class)
         .run(*args)
 }
