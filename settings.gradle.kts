@@ -5,4 +5,5 @@ plugins {
 rootProject.name = "docker-playground"
 
 include("application-dockerfile")
+include("application-jib")
 include("database-backup")
