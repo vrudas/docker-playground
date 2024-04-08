@@ -1,0 +1,32 @@
+services:
+  postgres:
+    build:
+      context: database-backup
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_DB=dvdrental'
+    ports:
+      - target: 5432
+        published: 5432
+    restart: 'always'
+  #    volumes:
+  #      - 'postgres-data:/var/lib/postgresql/data'
+  docker-application:
+    build:
+      context: application-dockerfile # Demo with pulling from Docker Hub
+    ports:
+      - target: 8080
+        published: 8080
+      - target: 8090
+        published: 8090
+    restart: 'always'
+    depends_on:
+      - postgres
+    environment:
+      - 'SPRING_DOCKER_COMPOSE_ENABLED=false'
+      - 'SPRING_MAIN_LAZY_INITIALIZATION=false' # Demo with disabling lazy initialization
+
+#      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/dvdrental'
+#      - 'SPRING_DATASOURCE_USERNAME=postgres'
+#      - 'SPRING_DATASOURCE_PASSWORD=postgres'
