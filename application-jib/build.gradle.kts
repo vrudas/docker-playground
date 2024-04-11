@@ -40,7 +40,7 @@ jib {
             "SPRING_MAIN_LAZY_INITIALIZATION" to "false",
             "SPRING_PROFILES_ACTIVE" to "prod"
         )
-        ports = listOf("8080", "9000")
+        ports = listOf("8080", "8090")
         format = ImageFormat.OCI
         appRoot = "/app"
     }
