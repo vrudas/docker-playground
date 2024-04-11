@@ -25,8 +25,7 @@ services:
       - postgres
     environment:
       - 'SPRING_DOCKER_COMPOSE_ENABLED=false'
-      - 'SPRING_MAIN_LAZY_INITIALIZATION=false' # Demo with disabling lazy initialization
-
-#      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/dvdrental'
-#      - 'SPRING_DATASOURCE_USERNAME=postgres'
-#      - 'SPRING_DATASOURCE_PASSWORD=postgres'
+      - 'SPRING_MAIN_LAZY_INITIALIZATION=false' # Demo with disabling lazy initialization and missing DB properties
+      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/dvdrental'
+      - 'SPRING_DATASOURCE_USERNAME=postgres'
+      - 'SPRING_DATASOURCE_PASSWORD=postgres'
